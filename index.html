@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R.B. Prabhas Raju | AI & ML Engineering Portfolio</title>
+  <meta name="description" content="Personal portfolio of R.B. Prabhas Raju, aspiring AI Engineer and 1st Semester B.Tech Student in Computer Science and Engineering (AI & ML).">
+  <!-- Local, dependency-free styling to keep the portfolio fully offline-safe -->
+  <!-- Separate CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Separate Vanilla JavaScript (deferred) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       STICKY TOP NAVIGATION BAR (Top Bar Contract: 3 Zones)
+       ========================================================================= -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="#home" class="brand-wordmark">R.B. Prabhas Raju</a>
+
+        <!-- Zone 2: Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Zone 3: Primary Action -->
+        <div class="nav-action">
+          <a href="#contact" class="btn-primary">Get in Touch</a>
+          <button class="mobile-menu-btn" id="mobileToggle" aria-label="Toggle menu">☰</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#home" class="mobile-nav-link active">Home</a>
+      <a href="#about" class="mobile-nav-link">About Me</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#achievements" class="mobile-nav-link">Achievements</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       1. HOME (HERO SECTION)
+       ========================================================================= -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left Typographic Column -->
+        <div class="hero-content">
+          <div class="section-kicker">B.Tech Student & Developer · AI & ML Specialization</div>
+          <h1>R.B. Prabhas Raju</h1>
+          <p class="hero-lead">
+            Aspiring AI Engineer and developer with hands-on experience in hackathons and ideathons. Passionate about leveraging GenAI and web technologies to build impactful solutions.
+          </p>
+
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <strong>Current Academic Status:</strong>
+            <span>1st Semester B.Tech Student in Computer Science and Engineering (AI & ML)</span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary">View My Projects →</a>
+            <a href="#contact" class="btn-secondary">Contact Me</a>
+            <a href="https://github.com/prabhasraju92008" target="_blank" rel="noreferrer" class="btn-icon" aria-label="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/r-b-prabhas-raju-353595432/" target="_blank" rel="noreferrer" class="btn-icon" aria-label="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Useful Space: Technical Snapshot & Quick Launch Panel -->
+        <div class="hero-snapshot-card">
+          <div class="snapshot-header">
+            <div>
+              <div class="snapshot-title">Technical Snapshot</div>
+              <div class="snapshot-subtitle">B.Tech CSE (AI & ML) · Semester 1</div>
+            </div>
+            <span class="snapshot-badge">Active Builder</span>
+          </div>
+
+          <div class="snapshot-label">Featured Software Simulators</div>
+
+          <div class="snapshot-shortcuts">
+            <!-- Shortcut 1 -->
+            <div class="shortcut-item" onclick="openModal('voterModal')">
+              <div>
+                <div class="shortcut-name">Voter Eligibility Calculator</div>
+                <div class="shortcut-desc">Regional statutory age verification logic</div>
+              </div>
+              <span class="shortcut-arrow">Launch →</span>
+            </div>
+
+            <!-- Shortcut 2 -->
+            <div class="shortcut-item" onclick="openModal('atmModal')">
+              <div>
+                <div class="shortcut-name">ATM Management System</div>
+                <div class="shortcut-desc">Banking simulation & PIN auth operations</div>
+              </div>
+              <span class="shortcut-arrow">Launch →</span>
+            </div>
+
+            <!-- Shortcut 3 -->
+            <div class="shortcut-item" onclick="openModal('gradeModal')">
+              <div>
+                <div class="shortcut-name">Student Grade Calculator</div>
+                <div class="shortcut-desc">Semester SGPA & 10-point GPA matrix</div>
+              </div>
+              <span class="shortcut-arrow">Launch →</span>
+            </div>
+          </div>
+
+          <div class="snapshot-footer">
+            <span>Hackathon Prototyping</span>
+            <span>·</span>
+            <span>Python & Web Stack</span>
+            <span>·</span>
+            <span>GenAI Explorer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Claim-to-Proof Row Below Split -->
+      <div class="hero-metric-bar">
+        <div class="metric-item">
+          <div class="label">Specialization</div>
+          <div class="val">Artificial Intelligence</div>
+          <div class="desc">Machine Learning & GenAI</div>
+        </div>
+        <div class="metric-item">
+          <div class="label">Academic Standing</div>
+          <div class="val">1st Semester B.Tech</div>
+          <div class="desc">Core Computing Foundation</div>
+        </div>
+        <div class="metric-item">
+          <div class="label">Competitions</div>
+          <div class="val">Hackathons & Ideathons</div>
+          <div class="desc">Rapid Technical Prototyping</div>
+        </div>
+        <div class="metric-item">
+          <div class="label">Software Projects</div>
+          <div class="val">3 Practical Tools</div>
+          <div class="desc">Live Simulators Available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       2. ABOUT ME
+       ========================================================================= -->
+  <section id="about">
+    <div class="container">
+      <div class="section-kicker">Educational Background & Vision</div>
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">
+        Building rigorous computer science fundamentals while actively deploying generative AI, web systems, and competitive prototyping.
+      </p>
+
+      <div class="about-cards-grid">
+        <div class="about-card">
+          <div>
+            <h3>Educational Background</h3>
+            <p>
+              Currently in my 1st semester pursuing a B.Tech degree, building a strong foundation in computer science and artificial intelligence.
+            </p>
+          </div>
+          <div class="about-card-footer">
+            B.Tech CSE (AI & ML) · Semester 1
+          </div>
+        </div>
+
+        <div class="about-card">
+          <div>
+            <h3>Interests</h3>
+            <p>
+              Python programming, Web Development, Generative AI, and participating in hackathons to solve real-world problems.
+            </p>
+          </div>
+          <div class="about-card-footer">
+            Python · Web Stack · GenAI
+          </div>
+        </div>
+
+        <div class="about-card">
+          <div>
+            <h3>Learning Goals & Aspirations</h3>
+            <p>
+              Eager to deepen my knowledge in machine learning and full-stack development, with the ultimate career aspiration of becoming a lead AI Engineer shaping intelligent, user-centric web applications.
+            </p>
+          </div>
+          <div class="about-card-footer">
+            Lead AI Engineer Trajectory
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. SKILLS
+       ========================================================================= -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-kicker">Technical Competencies</div>
+      <h2 class="section-title">Skills</h2>
+      <p class="section-subtitle">
+        Languages, applied technical tools, and problem-solving practices honed through engineering coursework and competitive ideathons.
+      </p>
+
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <h3>Programming Languages</h3>
+            <span>Core Foundation</span>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-top">
+                <span>Python</span>
+                <span class="skill-item-level">Primary</span>
+              </div>
+              <div class="skill-item-desc">Data structures, algorithm scripts, automation & simulation models.</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-top">
+                <span>HTML</span>
+                <span class="skill-item-level">Frontend</span>
+              </div>
+              <div class="skill-item-desc">Semantic page hierarchy, accessible DOM structuring & standards.</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-top">
+                <span>CSS</span>
+                <span class="skill-item-level">Layout</span>
+              </div>
+              <div class="skill-item-desc">Responsive styling, flexbox/grid architecture, subtle transitions.</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-top">
+                <span>JavaScript</span>
+                <span class="skill-item-level">Scripting</span>
+              </div>
+              <div class="skill-item-desc">Interactive state machines, DOM manipulation & client-side logic.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <h3>Technical Skills</h3>
+            <span>Applied Engineering</span>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-top">
+                <span>Web Development</span>
+                <span class="skill-item-level">Modern Web</span>
+              </div>
+              <div class="skill-item-desc">Single-page responsive applications, component layouts, and UI UX design.</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-top">
+                <span>Generative AI (beginner)</span>
+                <span class="skill-item-level">Active Study</span>
+              </div>
+              <div class="skill-item-desc">Exploring LLMs, multimodal generation, and building AI-assisted tools.</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-top">
+                <span>Prompt Engineering</span>
+                <span class="skill-item-level">Applied</span>
+              </div>
+              <div class="skill-item-desc">Crafting structured system prompts, step-by-step reasoning & few-shot logic.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Relevant Skills -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <h3>Other Relevant Skills</h3>
+            <span>Methods & Practice</span>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-top">
+                <span>Hackathon Prototyping</span>
+                <span class="skill-item-level">Competitions</span>
+              </div>
+              <div class="skill-item-desc">Rapidly turning problem statements into functional MVPs under time pressure.</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-top">
+                <span>Problem-Solving</span>
+                <span class="skill-item-level">Algorithmic</span>
+              </div>
+              <div class="skill-item-desc">Breaking down complex requirements into clean modular routines.</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-top">
+                <span>Continuous Learning</span>
+                <span class="skill-item-level">Growth</span>
+              </div>
+              <div class="skill-item-desc">Self-directed upskilling in AI frameworks, machine learning, and clean code.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. PROJECTS
+       ========================================================================= -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-kicker">Software Portfolio</div>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">
+        Functional utilities and simulations. Click any project to launch its live interactive simulator.
+      </p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-card-body">
+            <div class="project-card-meta">
+              <span>Civic Technology</span>
+              <span>·</span>
+              <span>Validation</span>
+            </div>
+            <h3>Voter Eligibility Calculator</h3>
+            <p>
+              A lightweight application that determines a user's eligibility to vote based on age and regional criteria.
+            </p>
+            <div class="project-card-tags">
+              Python / JS · Conditional Logic · Statutory Age Verification
+            </div>
+          </div>
+          <div class="project-card-actions">
+            <button class="btn-primary" onclick="openModal('voterModal')">Test Live Simulator</button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-card-body">
+            <div class="project-card-meta">
+              <span>Banking Simulation</span>
+              <span>·</span>
+              <span>State Machine</span>
+            </div>
+            <h3>ATM Management System</h3>
+            <p>
+              A software simulation handling basic banking operations like balance checking, withdrawals, and PIN management.
+            </p>
+            <div class="project-card-tags">
+              OOP Simulation · PIN Security · Ledger Management
+            </div>
+          </div>
+          <div class="project-card-actions">
+            <button class="btn-primary" onclick="openModal('atmModal')">Open ATM Console</button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-card-body">
+            <div class="project-card-meta">
+              <span>Academic Tool</span>
+              <span>·</span>
+              <span>GPA Calculator</span>
+            </div>
+            <h3>Student Grade Calculator</h3>
+            <p>
+              A utility tool designed to accurately calculate academic grades and GPA based on semester marks.
+            </p>
+            <div class="project-card-tags">
+              Weighted Grading · SGPA/CGPA Matrix · 10-Point Scale
+            </div>
+          </div>
+          <div class="project-card-actions">
+            <button class="btn-primary" onclick="openModal('gradeModal')">Calculate Grades & GPA</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. ACHIEVEMENTS
+       ========================================================================= -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-kicker">Honors & Competitions</div>
+      <h2 class="section-title">Achievements</h2>
+      <p class="section-subtitle">
+        Hands-on collegiate experience in fast-paced software hackathons and idea challenges.
+      </p>
+
+      <div class="achievement-banner">
+        <div class="achievement-header">Collegiate Competitions</div>
+        <h3 class="achievement-title">Participation & Awards</h3>
+        <p class="achievement-desc">
+          Active participant in collegiate hackathons and ideathons, rapidly ideating and prototyping technical solutions.
+        </p>
+
+        <div class="achievement-pillars">
+          <div class="pillar-box">
+            <h4>Collegiate Hackathons</h4>
+            <p>Rapidly building functional web and algorithmic proofs-of-concept within 24 to 48 hour team sprints.</p>
+          </div>
+          <div class="pillar-box">
+            <h4>Ideathons & Pitch Showcases</h4>
+            <p>Formulating technical feasibility models and pitching solutions for societal and educational problems.</p>
+          </div>
+          <div class="pillar-box">
+            <h4>Foundational Milestones</h4>
+            <p>Consistent academic excellence in 1st Semester CSE (AI & ML) coursework and independent programming projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. CONTACT
+       ========================================================================= -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-block">
+          <div>
+            <div class="section-kicker">Get in Touch</div>
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">
+              Reach out for hackathon collaborations, technical discussions, or student initiatives.
+            </p>
+          </div>
+
+          <div class="contact-email-card">
+            <div class="label">Professional Email</div>
+            <div class="email-row">
+              <a href="mailto:prabhasraju.3009@gmail.com">prabhasraju.3009@gmail.com</a>
+              <button class="copy-btn" onclick="copyEmail()">Copy</button>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <div class="section-kicker">Relevant Professional Links</div>
+            <a href="https://github.com/prabhasraju92008" target="_blank" rel="noreferrer" class="social-item">
+              <div>
+                <div class="name">GitHub Profile</div>
+                <div class="url">github.com/prabhasraju92008</div>
+              </div>
+              <span>↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/r-b-prabhas-raju-353595432/" target="_blank" rel="noreferrer" class="social-item">
+              <div>
+                <div class="name">LinkedIn Network</div>
+                <div class="url">linkedin.com/in/r-b-prabhas-raju-353595432</div>
+              </div>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>Send a Message</h3>
+          <p class="form-desc">
+            Feel free to write a message below or contact me directly via email.
+          </p>
+
+          <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Your Full Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" class="form-control" placeholder="Hackathon Project / Inquiry" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-control" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div>
+          <strong>R.B. Prabhas Raju</strong> · 1st Semester B.Tech (AI & ML)
+        </div>
+        <div>
+          <a href="#home">Back to Top ↑</a>
+          <span style="margin: 0 0.5rem;">·</span>
+          <a href="mailto:prabhasraju.3009@gmail.com">prabhasraju.3009@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODAL 1: VOTER ELIGIBILITY CALCULATOR SIMULATOR
+       ========================================================================= -->
+  <div class="modal-overlay" id="voterModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Voter Eligibility Calculator</h3>
+        <button class="modal-close" onclick="closeModal('voterModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 1rem;">
+          Determines user eligibility to vote based on statutory age and regional citizenship criteria.
+        </p>
+
+        <div class="simulator-box">
+          <div class="form-group">
+            <label for="voterAgeInput">Applicant Age</label>
+            <input type="number" id="voterAgeInput" class="form-control" value="19" min="1" max="120" oninput="runVoterCalculation()">
+          </div>
+          <div class="form-group">
+            <label for="voterRegionSelect">Electoral Region</label>
+            <select id="voterRegionSelect" class="form-control" onchange="runVoterCalculation()">
+              <option value="18">India (Min age: 18)</option>
+              <option value="18">United States (Min age: 18)</option>
+              <option value="18">United Kingdom (Min age: 18)</option>
+              <option value="16">Austria (Min age: 16)</option>
+              <option value="16">Brazil (Min age: 16)</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin-bottom: 0;">
+            <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: 500;">
+              <input type="checkbox" id="voterCitizenCheck" checked onchange="runVoterCalculation()">
+              Applicant is a legal citizen of the selected jurisdiction
+            </label>
+          </div>
+        </div>
+
+        <div id="voterVerdict" class="verdict-box verdict-success">
+          <strong>Eligible to Vote:</strong> Applicant meets all statutory age and citizenship requirements.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="closeModal('voterModal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 2: ATM MANAGEMENT SYSTEM
+       ========================================================================= -->
+  <div class="modal-overlay" id="atmModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>ATM Management System</h3>
+        <button class="modal-close" onclick="closeModal('atmModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 1rem;">
+          Software simulation handling balance checking, cash withdrawals, deposits, and PIN management.
+        </p>
+
+        <div class="simulator-box">
+          <div id="atmAuthScreen">
+            <div style="text-align: center; margin-bottom: 1rem;">
+              <div style="font-size: 0.75rem; color: var(--accent-earth);">DEFAULT SIMULATION PIN: <strong>1234</strong></div>
+            </div>
+            <div class="form-group">
+              <label for="atmPinInput">Enter 4-Digit PIN</label>
+              <input type="password" id="atmPinInput" class="form-control" maxlength="4" placeholder="••••" style="text-align: center; font-size: 1.25rem; letter-spacing: 0.2em;">
+            </div>
+            <button class="btn-primary" style="width: 100%;" onclick="loginAtm()">Enter PIN</button>
+          </div>
+
+          <div id="atmDashboardScreen" style="display: none;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-subtle);">
+              <span style="font-size: 0.75rem; color: var(--accent-earth);">Available Balance:</span>
+              <strong style="font-size: 1.125rem; font-family: var(--font-mono); color: var(--text-primary);">$<span id="atmBalanceDisplay">2450.00</span></strong>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 1rem;">
+              <button class="btn-secondary" onclick="atmWithdrawPrompt()">Withdraw $50</button>
+              <button class="btn-secondary" onclick="atmDepositPrompt()">Deposit $100</button>
+              <button class="btn-secondary" onclick="atmCheckBalance()">Check Balance</button>
+              <button class="btn-secondary" onclick="atmLogout()">Eject Card</button>
+            </div>
+            <div id="atmConsoleLog" style="font-size: 0.75rem; color: var(--text-secondary); font-family: var(--font-mono); background: var(--bg-canvas); padding: 0.5rem; border-radius: 4px;">
+              Session started. Ready for operations.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="closeModal('atmModal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 3: STUDENT GRADE CALCULATOR
+       ========================================================================= -->
+  <div class="modal-overlay" id="gradeModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Student Grade & SGPA Calculator</h3>
+        <button class="modal-close" onclick="closeModal('gradeModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 1rem;">
+          Accurately calculate semester grades, percentage, and SGPA on a 10-point scale.
+        </p>
+
+        <div class="simulator-box" style="display: flex; justify-content: space-around; text-align: center; margin-bottom: 1rem;">
+          <div>
+            <div style="font-size: 0.6875rem; color: var(--accent-earth); text-transform: uppercase;">SGPA (10-Point)</div>
+            <div id="sgpaDisplay" style="font-size: 1.5rem; font-weight: 700; font-family: var(--font-mono);">8.70</div>
+          </div>
+          <div>
+            <div style="font-size: 0.6875rem; color: var(--accent-earth); text-transform: uppercase;">Avg Percentage</div>
+            <div id="avgMarksDisplay" style="font-size: 1.5rem; font-weight: 700; font-family: var(--font-mono);">86.8%</div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8125rem;">
+            <span>Python Programming (4 cr)</span>
+            <input type="number" class="grade-input form-control" style="width: 80px; text-align: center;" value="88" min="0" max="100" oninput="calculateGPA()">
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8125rem;">
+            <span>Engineering Mathematics (4 cr)</span>
+            <input type="number" class="grade-input form-control" style="width: 80px; text-align: center;" value="92" min="0" max="100" oninput="calculateGPA()">
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8125rem;">
+            <span>Web Technologies (3 cr)</span>
+            <input type="number" class="grade-input form-control" style="width: 80px; text-align: center;" value="85" min="0" max="100" oninput="calculateGPA()">
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8125rem;">
+            <span>Intro to AI & ML (3 cr)</span>
+            <input type="number" class="grade-input form-control" style="width: 80px; text-align: center;" value="82" min="0" max="100" oninput="calculateGPA()">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="closeModal('gradeModal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-feedback" id="toastMessage">Copied to clipboard!</div>
+
+</body>
+</html>
